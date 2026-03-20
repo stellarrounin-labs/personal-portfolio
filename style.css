@@ -18,6 +18,7 @@ body a {
   z-index: 9999;
 }
 
+
 .navbar__profile {
   display: flex;
   align-items: center;
@@ -64,10 +65,6 @@ body a {
   padding: 1rem 6rem;
 }
 
-.bento-box__projects {
-  /* padding: 1rem; */
-}
-
 .bento-box__projects p {
   border-bottom: 2px solid black;
   padding-bottom: 1rem;
@@ -110,4 +107,55 @@ footer {
   text-align: center;
   padding: 1rem;
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: block;
+    padding: .5rem;
+  }
+
+  .navbar__profile {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar__links {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: .5rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__desc {
+    font-size: 1rem;
+  }
+
+  .bento-box {
+    grid-template-columns: 1fr;
+    padding: .5rem;
+    gap: 10px;
+  }
+
+  .bento-box__projects p {
+    text-align: center;
+  }
+
+  .bento-box h2, .bento-box h3 {
+    text-align: center;
+  }
+
+  .bento-box__education p {
+    margin: .5rem 0;
+  }
+
+  .bento-box__education ul {
+    margin-top: 0;
+  }
 }
