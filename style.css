@@ -52,3 +52,14 @@ body {
 }
 
 /* */
+
+.bento-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.bento-box__projects p {
+  border-bottom: 2px solid black;
+  padding: 1rem;
+}
