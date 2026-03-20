@@ -20,17 +20,22 @@
     </div>
     <ul class="navbar__links">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
+      <li>/</li>
+      <li><a href="#projects">Projects</a></li>
+      <li>/</li>
       <li><a href="#">Articles</a></li>
+      <li>/</li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <header>
-    <h1>Frontend Developer</h1>
-    <p>html only with proper layout, no styling</p>
+
+  <header class="hero">
+    <h1 class="hero__title">Frontend Developer</h1>
+    <p class="hero__desc">html only with proper layout, no styling</p>
   </header>
+
   <main>
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
       <p>HTML Only Portfolio</p>
       <p>Calculator</p>
@@ -39,63 +44,65 @@
       <p>Product Upcoming Page</p>
     </section>
 
-    <section>
-      <h2>Work Experience</h2>
-      <div>
-        <p>roadmap.sh</p>
-        <p>Solved all the frontend problems</p>
-        <a href="">Visit my Profile</a>
-      </div>
-      <div>
-        <p>Opensource Work</p>
+    <div class="bento-box">
+      <section>
+        <h2>Work Experience</h2>
+        <div>
+          <p>roadmap.sh</p>
+          <p>Solved all the frontend problems</p>
+          <a href="">Visit my Profile</a>
+        </div>
+        <div>
+          <p>Opensource Work</p>
+          <p>
+            Contributed to 50 opensource projects. Made my own projects with 200
+            GitHub Stars.
+          </p>
+          <a href="">Visit my Github Profile</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
         <p>
-          Contributed to 50 opensource projects. Made my own projects with 200
-          GitHub Stars.
+          Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30
+          sessions.
         </p>
-        <a href="">Visit my Github Profile</a>
-      </div>
-    </section>
+        <p>
+          Courses I took:
+        <ul>
+          <li>Object Oriented Programming</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Web Engineering</li>
+          <li>Artificial Intelligence</li>
+          <li>Human Computer Interaction</li>
+          <li>Computer Graphics</li>
+          <li>Database Management Systems</li>
+          <li>Distributed Database Systems</li>
+          <li>Discreet Mathematics</li>
+        </ul>
+        </p>
+      </section>
 
-    <section>
-      <h2>Education</h2>
-      <p>
-        Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30
-        sessions.
-      </p>
-      <p>
-        Courses I took:
-      <ul>
-        <li>Object Oriented Programming</li>
-        <li>Data Structures and Algorithms</li>
-        <li>Web Engineering</li>
-        <li>Artificial Intelligence</li>
-        <li>Human Computer Interaction</li>
-        <li>Computer Graphics</li>
-        <li>Database Management Systems</li>
-        <li>Distributed Database Systems</li>
-        <li>Discreet Mathematics</li>
-      </ul>
-      </p>
-    </section>
-
-    <section>
-      <h2>Reviews from my teachers</h2>
-      <div>
-        <p>John doe was a brilliant student; always stood out with his assignments.</p>
-        <p>Jane Doe</p>
-        <p>Assistant Profesor</p>
-      </div>
-      <div>
-        <p>John doe was a brilliant student; always stood out with his assignments.</p>
-        <p>Jane Doe</p>
-        <p>Assistant Profesor</p>
-      </div>
-      <div>
-        <p>John doe was a brilliant student; always stood out with his assignments.</p>
-        <p>Jane Doe</p>
-        <p>Assistant Profesor</p>
-      </div>
-    </section>
+      <section>
+        <h2>Reviews from my teachers</h2>
+        <div>
+          <p>John doe was a brilliant student; always stood out with his assignments.</p>
+          <p>Jane Doe</p>
+          <p>Assistant Profesor</p>
+        </div>
+        <div>
+          <p>John doe was a brilliant student; always stood out with his assignments.</p>
+          <p>Jane Doe</p>
+          <p>Assistant Profesor</p>
+        </div>
+        <div>
+          <p>John doe was a brilliant student; always stood out with his assignments.</p>
+          <p>Jane Doe</p>
+          <p>Assistant Profesor</p>
+        </div>
+      </section>
+    </div>
   </main>
   <footer>
     <p>Copyright (c) 2026 Author. All Rights Reserved.</p>
