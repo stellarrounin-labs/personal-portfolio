@@ -110,9 +110,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  body h2, body h3 {
+    text-align: center;
+  }
+
   .navbar {
     display: block;
-    padding: .5rem;
   }
 
   .navbar__profile {
@@ -123,6 +126,7 @@ footer {
   .navbar__links {
     justify-content: center;
     gap: 10px;
+    padding: 0;
   }
 
   .hero {
@@ -147,15 +151,19 @@ footer {
     text-align: center;
   }
 
-  .bento-box h2, .bento-box h3 {
-    text-align: center;
-  }
-
   .bento-box__education p {
     margin: .5rem 0;
   }
 
   .bento-box__education ul {
     margin-top: 0;
+  }
+
+  .reviews__cards {
+    flex-direction: column;
+  }
+
+  .cards__item {
+    padding: .5rem 1rem;
   }
 }
