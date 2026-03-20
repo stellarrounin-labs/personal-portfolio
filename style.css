@@ -81,3 +81,27 @@ body a {
   list-style-type: square; 
   padding-left: 1rem;
 }
+
+.bento-box__reviews {
+  padding: 1rem 2rem;
+}
+
+.reviews__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cards__item {
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+
+.item__reviewer {
+  color: dimgray;
+}
+
+.item__reviewer p {
+  margin: 0;
+}
