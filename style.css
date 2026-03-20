@@ -59,7 +59,11 @@ body {
   gap: 30px;
 }
 
+.bento-box__projects {
+  padding: 1rem;
+}
+
 .bento-box__projects p {
   border-bottom: 2px solid black;
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
