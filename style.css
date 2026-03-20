@@ -105,3 +105,9 @@ body a {
 .item__reviewer p {
   margin: 0;
 }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
