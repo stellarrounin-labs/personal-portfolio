@@ -27,6 +27,9 @@
       <li>/</li>
       <li><a href="#">Contact</a></li>
     </ul>
+    <button id="theme-toggle" aria-label="Change Theme" aria-pressed="false">
+      Theme
+    </button>
   </nav>
 
   <header class="hero">
@@ -115,6 +118,25 @@
   <footer>
     <p>Copyright (c) 2026 Author. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    const root = document.documentElement;
+    const button = document.getElementById('theme-toggle');
+    const saved = localStorage.getItem('theme');
+
+    const initialTheme = saved || "light"
+    root.setAttribute("data-theme", initialTheme)
+    button.setAttribute("aria-pressed", initialTheme === "dark")
+
+    button.addEventListener("click", () => {
+      const currentTheme = root.getAttribute("data-theme")
+      const nextTheme = currentTheme === "dark" ? "light" : "dark"
+
+      root.setAttribute("data-theme", nextTheme)
+      localStorage.setItem("theme", nextTheme)
+      button.setAttribute("aria-pressed", nextTheme === "dark")
+    })
+  </script>
 </body>
 
 </html>
